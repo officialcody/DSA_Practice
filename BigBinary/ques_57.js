@@ -1,28 +1,27 @@
 /****
- * QUESTION: Create a function which converts the given number to a specific given base.
+ * QUESTION: Create a function which returns characters created from the given sequence of UTF-16 code units.
  * 
  * Note:
- *  Expected bases for the inputs will be either binary or octal or decimal or hexadecimal.
+ * There could be any number of inputs with minimum of 1.
+ * Concatinate and return the final string.
  * 
  * INPUT:
- *  const value = '7B';
- *  const newBase = 10
- *  const currentBase = 16
+ *  const codes = [73, 20, 76, 111, 118, 101, 20, 74, 83];
  * 
  * OUTPUT:
- *  123
+ *  ILoveJS
+ * 
  */
 
-function convertBase(value, currentBase, newBase) {
-    return parseInt(value, currentBase).toString(newBase);
+function convertToString(...codes) {
+    return String.fromCharCode(...codes);
 }
 
-function checkTestCase(num, value, currentBase, newBase){
-    const result = convertBase(value, currentBase, newBase);
+function checkTestCase(num, codes){
+    const result = convertToString(...codes);
     console.log(`Test Case - ${num}`);
     console.log(`${result}`);
 }
 
-checkTestCase(1, '7B', 16, 10);
-checkTestCase(2, '9012', 10, 2);
-checkTestCase(3, "154D", 16, 8);
+checkTestCase(1, [73, 20, 76, 111, 118, 101, 20, 74, 83]);
+checkTestCase(2, [66, 105, 103, 20, 66, 105, 110, 97, 114, 121]);
