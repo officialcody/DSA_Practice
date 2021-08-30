@@ -32,7 +32,7 @@ function merge(left, right){
        result.push(right[rightIndex]);
        rightIndex++
     }
-  }  
+  }
   //our concatenated and sorted array
   return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 }
