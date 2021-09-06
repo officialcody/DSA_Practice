@@ -37,6 +37,7 @@
  * Resources: 
  * 1. https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
  * 2. https://dev.to/soorya54/largest-sum-of-sub-arrays-using-kadane-s-algorithm-33bn
+ * 3. https://youtu.be/HCL4_bOd3-4
  */
 
 /**
