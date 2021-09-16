@@ -33,6 +33,13 @@ var merge = function(intervals) {
       }
   }
   
-  return final_arr;
+  return JSON.stringify(final_arr);
 };
-console.log(merge([[5,5],[1,3],[3,5],[4,6],[1,1],[3,3],[5,6],[3,3],[2,4],[0,0]]));
+
+function checkTestCase(tc, intervals){
+    console.log(`Test Case ${tc}`);
+    console.log(`Minimum Height Difference: ${merge(intervals)}`);
+}
+  
+checkTestCase(1, [[1,3],[2,6],[8,10],[15,18]]);
+checkTestCase(2, [[1,4],[4,5]]);
