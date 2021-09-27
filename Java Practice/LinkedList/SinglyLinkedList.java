@@ -1,9 +1,9 @@
 public class SinglyLinkedList<T> {
-  public class Node<T> {
-    T data;
-    Node<T> next;
+  public class Node<S> {
+    S data;
+    Node<S> next;
   
-    Node(T data) {
+    Node(S data) {
       this.data = data;
       this.next = null;
     }
@@ -13,7 +13,7 @@ public class SinglyLinkedList<T> {
 
   public void addElementAtLast(T data) {
     if(head == null){
-      head = new Node(data);
+      head = new Node<T>(data);
     } else {
       Node<T> currentNode = head;
       while(currentNode.next != null){
