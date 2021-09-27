@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ArraysIntro",
+      "request": "launch",
+      "mainClass": "ArraysIntro",
+      "projectName": "DSA_c78d5134"
+    },
+    {
+      "type": "java",
+      "name": "Launch LLTest",
+      "request": "launch",
+      "mainClass": "LLTest",
+      "projectName": "DSA_c78d5134"
+    },
+    {
+      "type": "java",
       "name": "Launch HelloWorld",
       "request": "launch",
       "mainClass": "HelloWorld",
