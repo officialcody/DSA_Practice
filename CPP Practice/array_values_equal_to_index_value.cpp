@@ -3,9 +3,17 @@ using namespace std;
 
 class Solution{
 public:
-    //Just print the space seperated array elements
-	void printArray(int arr[], int n) {
-	    for(int i=0;i<n;i++) cout << arr[i] << " ";
+
+	void valueEqualToIndex(int arr[], int n) {
+    vector<int> values;
+    for(int i=0;i<n;i++){
+        if(arr[i] == i+1){
+          values.push_back(arr[i]);
+        }
+    }
+    for(int i=0;i<values.size();i++){
+      cout << values.at(i) << " ";
+    }
 	}
 };
 
@@ -21,7 +29,7 @@ int main() {
     cout << "Enter each element of Array(seperated with space): " << endl;
     for(int i=0;i<n;i++) cin >> a[i];
     Solution ob;
-    ob.printArray(a, n);
+    ob.valueEqualToIndex(a, n);
   }
   return 0;
 }
