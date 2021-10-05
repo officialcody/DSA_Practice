@@ -1,3 +1,5 @@
+package ClassesAndObjects;
+
 class Test {
   public static void main(String[] args) {
     Emp e1 = new Emp(1, "Sparsh", 2000000f);

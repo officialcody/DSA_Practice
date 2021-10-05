@@ -1,3 +1,5 @@
+package ClassesAndObjects;
+
 class Bank {
   int getRateOfInterest() {
     return 0;

@@ -1,3 +1,5 @@
+package ARRAYS;
+
 class ArraysIntro {
   public static void main(String [] args) {
     Student sparsh = new Student("Sparsh", 22);
